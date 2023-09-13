@@ -4,12 +4,14 @@
 import React from 'react';
 import './Cart.css'
 
-const Cart = ({selectedActors}) => {
+const Cart = ({selectedActors, remaining, totalCost}) => {
     console.log(selectedActors);
     return (
         <div>
-            <h5>Total actors:{selectedActors.length}</h5>
-            <h1>This is Cart</h1>
+            <h3>Total actors:{selectedActors.length}</h3>
+            {/* <h1>This is Cart</h1> */}
+            <h4>Remaining:{remaining}</h4>
+            <h4>Total cost:{totalCost}</h4>
          {selectedActors.map((actor) =>(
          <li key={actor.id}>{actor.name}</li>
          ))}

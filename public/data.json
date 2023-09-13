@@ -116,17 +116,9 @@
     "salary": 75000,
     "country": "USA"
   },
+
   {
     "id": 14,
-    "name": "Sophia Anderson",
-    "age": 24,
-    "role": "Data Scientist",
-    "image": "laptop4.jpg",
-    "salary": 85000,
-    "country": "Canada"
-  },
-  {
-    "id": 15,
     "name": "William Martinez",
     "age": 29,
     "role": "Customer Service",

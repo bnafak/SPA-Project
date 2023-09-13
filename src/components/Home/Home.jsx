@@ -8,6 +8,8 @@ import "./Home.css";
 const Home = () => {
   const [allActors, setAllActors] = useState([]);
   const [selectedActors, setSelectedActors] = useState([]);
+  const [remaining, setRemaining] = useState(0);
+  const [totalCost, setTotalCost] =useState(0);
 
   useEffect(() => {
     fetch('data.json')
@@ -28,12 +30,16 @@ const Home = () => {
       selectedActors.forEach((item) => {
         count = count + item.salary;
       });
-      console.log(count);
+      // console.log(count);
+      const totalRemaining =20000-count;
+      setTotalCost(count);
+      setRemaining(totalRemaining);
       setSelectedActors([...selectedActors, actor]);
     }
   }
  
   return (
+    
     <div className="container">
       <div className="home-container">
         <div className="card-container">
@@ -58,7 +64,7 @@ const Home = () => {
       </div>
 
       <div className="cart">
-       <Cart selectedActors={selectedActors}></Cart>
+       <Cart selectedActors={selectedActors} remaining={remaining} totalCost={totalCost}></Cart>
       </div>
     </div>
   );
