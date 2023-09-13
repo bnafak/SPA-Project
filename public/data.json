@@ -4,7 +4,7 @@
     "name": "John Doe",
     "age": 30,
     "role": "Engineer",
-    "image": "https://example.com/john_doe.jpg",
+    "image": "women.jpg",
     "salary": 75000,
     "country": "USA"
   },
@@ -13,7 +13,7 @@
     "name": "Jane Smith",
     "age": 28,
     "role": "Designer",
-    "image": "https://example.com/jane_smith.jpg",
+    "image": "man-2.jpg",
     "salary": 65000,
     "country": "Canada"
   },
@@ -22,7 +22,7 @@
     "name": "Mike Johnson",
     "age": 35,
     "role": "Manager",
-    "image": "https://example.com/mike_johnson.jpg",
+    "image": "man-4.jpg",
     "salary": 85000,
     "country": "USA"
   },
@@ -31,7 +31,7 @@
     "name": "Sarah Brown",
     "age": 25,
     "role": "Developer",
-    "image": "https://example.com/sarah_brown.jpg",
+    "image": "gentleman1.jpg",
     "salary": 70000,
     "country": "Canada"
   },
@@ -40,7 +40,7 @@
     "name": "David Wilson",
     "age": 32,
     "role": "Analyst",
-    "image": "https://example.com/david_wilson.jpg",
+    "image": "gentleman2.jpg",
     "salary": 80000,
     "country": "USA"
   },
@@ -49,7 +49,7 @@
     "name": "Emily Davis",
     "age": 29,
     "role": "Marketing Specialist",
-    "image": "https://example.com/emily_davis.jpg",
+    "image": "gentleman5.jpg",
     "salary": 60000,
     "country": "Canada"
   },
@@ -58,7 +58,7 @@
     "name": "Michael White",
     "age": 40,
     "role": "Product Manager",
-    "image": "https://example.com/michael_white.jpg",
+    "image": "gentleman6.jpg",
     "salary": 90000,
     "country": "USA"
   },
@@ -67,7 +67,7 @@
     "name": "Linda Adams",
     "age": 27,
     "role": "Graphic Designer",
-    "image": "https://example.com/linda_adams.jpg",
+    "image": "gentleman7.jpg",
     "salary": 65000,
     "country": "Canada"
   },
@@ -76,7 +76,7 @@
     "name": "Kevin Lee",
     "age": 34,
     "role": "Sales Representative",
-    "image": "https://example.com/kevin_lee.jpg",
+    "image": "gentleman8.jpg",
     "salary": 75000,
     "country": "USA"
   },
@@ -85,7 +85,7 @@
     "name": "Olivia Hall",
     "age": 31,
     "role": "HR Manager",
-    "image": "https://example.com/olivia_hall.jpg",
+    "image": "women.jpg",
     "salary": 80000,
     "country": "Canada"
   },
@@ -94,7 +94,7 @@
     "name": "Daniel Clark",
     "age": 33,
     "role": "Accountant",
-    "image": "https://example.com/daniel_clark.jpg",
+    "image": "laptop.jpg",
     "salary": 70000,
     "country": "USA"
   },
@@ -103,7 +103,7 @@
     "name": "Amanda Taylor",
     "age": 26,
     "role": "Content Writer",
-    "image": "https://example.com/amanda_taylor.jpg",
+    "image": "laptop2.jpg",
     "salary": 60000,
     "country": "Canada"
   },
@@ -112,7 +112,7 @@
     "name": "Robert Johnson",
     "age": 37,
     "role": "IT Support",
-    "image": "https://example.com/robert_johnson.jpg",
+    "image": "laptop3.jpg",
     "salary": 75000,
     "country": "USA"
   },
@@ -121,7 +121,7 @@
     "name": "Sophia Anderson",
     "age": 24,
     "role": "Data Scientist",
-    "image": "https://example.com/sophia_anderson.jpg",
+    "image": "laptop4.jpg",
     "salary": 85000,
     "country": "Canada"
   },
@@ -130,7 +130,7 @@
     "name": "William Martinez",
     "age": 29,
     "role": "Customer Service",
-    "image": "https://example.com/william_martinez.jpg",
+    "image": "sweing.jpg",
     "salary": 70000,
     "country": "USA"
   }

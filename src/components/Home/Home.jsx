@@ -1,22 +1,24 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import Cart from "../Cart/Cart";
 import "./Home.css";
 
 const Home = () => {
   const [allActors, setAllActors] = useState([]);
+  const [selectedActors, setSelectedActors] = useState([]);
+
   useEffect(() => {
-    fetch("data.json")
+    fetch('data.json')
       .then((res) => res.json())
-      // .then(data=>console.log(data))
       .then((data) => setAllActors(data));
   }, []);
 
-  console.log(allActors)
-  console.log(allActors);
+  const handleSelectActor =(actor)=> {
+    setSelectedActors([...selectedActors, actor]);
+  }
+ 
   return (
     <div className="container">
       <div className="home-container">
@@ -25,7 +27,7 @@ const Home = () => {
             allActors.map(actor => (
                 <div key={actor.id} className="card">
                 <div className="card-img">
-                <img className="photo" src="{actor.image}" alt="" />
+                <img className="photo" src={actor.image} alt="" />
                 </div>
                 <h2>Name: {actor.name}</h2>
                 <p><small>Lorem, ipsum dolor sit amet    consectetur adipisicing elit.Reiciendis, veniam.</small>
@@ -34,7 +36,7 @@ const Home = () => {
                     <p>{actor.salary}</p>
                     <p>{actor.role}</p>
                 </div>
-                <button className="card-btn">Select</button>
+                <button onClick={() =>handleSelectActor(actor)} className="card-btn">Select</button>
           </div>
             ))
         }
@@ -42,7 +44,7 @@ const Home = () => {
       </div>
 
       <div className="cart">
-        <h1>This is a Cart</h1>
+       <Cart selectedActors={selectedActors}></Cart>
       </div>
     </div>
   );
