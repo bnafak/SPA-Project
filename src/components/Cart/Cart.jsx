@@ -8,9 +8,10 @@ const Cart = ({selectedActors}) => {
     console.log(selectedActors);
     return (
         <div>
+            <h5>Total actors:{selectedActors.length}</h5>
             <h1>This is Cart</h1>
          {selectedActors.map((actor) =>(
-         <li>{actor.name}</li>
+         <li key={actor.id}>{actor.name}</li>
          ))}
         </div>
     );
