@@ -18,13 +18,19 @@ const Home = () => {
   const handleSelectActor =(actor)=> {
     const isExist = selectedActors.find((item) => item.id==actor.id);
 
+    let count = actor.salary;
+
     if(isExist){
      return alert('already booked')
     }
     else{
+      // setSelectedActors([...selectedActors, actor]);
+      selectedActors.forEach((item) => {
+        count = count + item.salary;
+      });
+      console.log(count);
       setSelectedActors([...selectedActors, actor]);
     }
-
   }
  
   return (
@@ -38,7 +44,7 @@ const Home = () => {
                 <img className="photo" src={actor.image} alt="" />
                 </div>
                 <h2>Name: {actor.name}</h2>
-                <p><small>Lorem, ipsum dolor sit amet    consectetur adipisicing elit.Reiciendis, veniam.</small>
+                <p><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Reiciendis, veniam.</small>
                 </p>
                 <div className="info">
                     <p>{actor.salary}</p>
