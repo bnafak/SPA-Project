@@ -14,6 +14,8 @@ const Home = () => {
       // .then(data=>console.log(data))
       .then((data) => setAllActors(data));
   }, []);
+
+  console.log(allActors)
   console.log(allActors);
   return (
     <div className="container">
@@ -21,16 +23,16 @@ const Home = () => {
         <div className="card-container">
         {
             allActors.map(actor => (
-                <div className="card">
+                <div key={actor.id} className="card">
                 <div className="card-img">
-                <img className="photo" src="crest.png" alt="" />
+                <img className="photo" src="{actor.image}" alt="" />
                 </div>
-                <h2>Barun Nafak</h2>
+                <h2>Name: {actor.name}</h2>
                 <p><small>Lorem, ipsum dolor sit amet    consectetur adipisicing elit.Reiciendis, veniam.</small>
                 </p>
                 <div className="info">
-                    <p>Salary:200</p>
-                    <p>Writter</p>
+                    <p>{actor.salary}</p>
+                    <p>{actor.role}</p>
                 </div>
                 <button className="card-btn">Select</button>
           </div>
